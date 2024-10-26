@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // Step:3 == Link redux with our react file.
 
 root.render(
-  <HashRouter>
+  <HashRouter basename='/ECOMSITE'>
   
   <Provider store={Store}>
     <App />
