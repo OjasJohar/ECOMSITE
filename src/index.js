@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { Store } from './redux/Store';
 import {Provider} from "react-redux";
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,12 +12,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // Step:3 == Link redux with our react file.
 
 root.render(
-  <BrowserRouter>
+  <HashRouter>
   
   <Provider store={Store}>
     <App />
     <Toaster/>
   </Provider>
   
-  </BrowserRouter>  
+  </HashRouter>  
 );
